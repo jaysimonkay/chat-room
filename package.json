@@ -1,27 +1,27 @@
 {
-  "name": "chatRoom",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jaysimonkay/chat-room.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jaysimonkay/chat-room/issues"
-  },
-  "homepage": "https://github.com/jaysimonkay/chat-room#readme",
-  "dependencies": {
-    "@pusher/chatkit-server": "^1.1.0",
-    "body-parser": "^1.18.3",
-    "cors": "^2.8.5",
-    "dotenv": "^7.0.0",
-    "express": "^4.16.4"
-  }
+    "name": "chatRoom",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jaysimonkay/chat-room.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/jaysimonkay/chat-room/issues"
+    },
+    "homepage": "https://github.com/jaysimonkay/chat-room#readme",
+    "dependencies": {
+        "@pusher/chatkit-server": "^1.1.0",
+        "body-parser": "^1.18.3",
+        "cors": "^2.8.5",
+        "dotenv": "^7.0.0",
+        "express": "^4.16.4"
+    }
 }
