@@ -6,7 +6,32 @@
                 <input placeholder="Enter your username" type="text" name="userid" [(ngModel)]="userId" />
             </form>
         </section>
+        <section *ngIf="currentUser.id" class="room-members">
+            <h4>Room Users</h4>
+            <ul class="user-list">
+                <li *ngFor="let user of roomUsers">
+                    <span class="presence {{ user.presence.state }}"></span>
+                    <span>{{ user.name }}</span>
+                </li>
+            </ul>
+        </section>
     </aside>
-    <main class="chat-window"></main>
+    <main class="chat-window">
+        <header class="chat-header">
+            <h4 *ngIf="!currentRoom.name; else roomName">Chat</h4>
+            <ng-template #roomName>
+                <h4>{{ currentRoom.name }}</h4>
+            </ng-template>
+            <span class="participants"></span>
+        </header>
+        <section class="chat-session">
+            <ul class="message-list">
+                <li class="user-message" *ngFor="let message of messages">
+                    <span class="user-id">{{ message.senderId }}</span>
+                    <span>{{ message.text }}</span>
+                </li>
+            </ul>
+        </section>
+    </main>
     <aside class="sidebar right-sidebar"></aside>
 </div>
